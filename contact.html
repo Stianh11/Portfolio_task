@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="./">
+                <img src="./img/S-logo-removebg.png" alt="Logo"/>
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="textmasking">
+            <h1>CONTACT</h1>
+        </div>
+    </header>
+    <section id="contact">
+        <div class="container">
+            <h2>Try To Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autofocus placeholder="Write the sound people make to get your attention:">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Write the name of your digital carrier pigeon:">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write the something you want delivered:"></textarea>
+                <button type="submit">Send</button>
+                <div class="modal-overlay" id="modalOverlayId"></div>
+                <div class="modal" id="modalId">
+                  <p>You will maybe get an awnser within 69 years.</p>
+                  <button id="closeModal">Close</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <section class="social-links">
+            <div class="container">
+                <h3>Find me online</h3>
+                <ul>
+                    <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                    <!-- <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li> ** IF MORE SOSIALS WANT TO BE ADDED-->
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <canvas id="404s"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>

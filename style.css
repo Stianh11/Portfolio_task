@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+body{
+    background-color: #060606;
+    margin: 0;
+    padding: 0; 
+}
+html, body{
+    width: 100%;
+    height: 100%; 
+    overflow-x: hidden; 
+}
+nav .logo img{
+    height: 150px;
+    margin-left: 50px;
+    width: auto;
+    transition: transform 0.8s ease-in-out; 
+}
+nav .logo img:hover {
+    transform: rotate(360deg);
+}
+nav{
+    max-width: auto;
+    margin: 0 auto;
+    min-height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position:relative;
+    top: 0;
+}
+nav li{
+    font-size: 1.2rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+nav li a{
+    text-decoration: none;
+    color: #00ff00;
+    padding: 0.5rem 0.75rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+}
+nav li a:hover{
+    color: red;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 15px;
+}
+ul li a{
+    color: green;
+    text-decoration: none;
+    font-size: 1.9em;
+}
+
+/* HEADER */
+.textmasking{
+    display: flex;
+    justify-content: center;
+}
+.textmasking h1{
+    background-image: url("./img/TextMasking.jpg");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px red;
+    background-position: center;
+    background-size: contain;
+    font-weight: bold;
+    font-size: 200px;
+    border: 1px green;
+}
+/* MAIN */
+.profile{
+    background-color: #1b1b1b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    border: 4px solid green;
+}
+
+.profile-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ff0000;
+    margin-bottom: 20px;
+}
+.profile h2{
+    margin: 10px 0;
+    font-size: 2em;
+    color: #00ff00;
+}
+.profile p{
+    color: #ccc;
+    font-size: 1.4em;
+}
+/* PROJECTS */
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+}
+.project{
+    border-radius: 10px;
+    height: 700px;
+    width: 500px;
+    background-color: #1b1b1b;
+    border: 4px solid green; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.project h2{
+    /* color: #00ff00; */
+    color: red;
+    font-size: 40px;
+}
+.project p{
+    color: #00ff00;
+    font-size: 24px;
+}
+.project img{
+    width: 300px;
+    height: 350px;
+    max-width: 300px;
+    max-height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-top: 20px; 
+    border: 4px solid #00ff00;
+    object-fit: cover;
+}
+.project a{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    color: #00ff00;
+    text-decoration: none;
+    padding: 5px 5px;
+    border: 2px solid #00ff00;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 30px;
+}
+.project p a{
+    border: none;
+}
+.project a:hover{
+    background-color: red;
+}
+#beta{
+    color: red;
+}
+/* Contact Section */
+#contact{
+    color: green;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+#contact h2{
+    font-size: 3em;
+    color: greenyellow;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 2px green
+}
+
+#contact-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    font-size: 24px;
+}
+
+#contact-form label{
+    text-align: left;
+    font-weight: bold;
+    color: greenyellow;
+}
+
+#contact-form input,
+#contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #060606;
+    color: greenyellow;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    resize: none;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+    border-color: greenyellow;
+    outline: none;
+    background-color: #1b1b1b;
+}
+
+#contact-form button{
+    padding: 10px 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    background-color: red;
+    width: 150px;
+    border: 4px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact-form button:hover{
+    background-color: #00ff00;
+    transform: scale(1.05);
+}
+
+#contact-form button:active{
+    background-color: #009900;
+    transform: scale(1);
+}
+.modal {
+    display: none; /* Hide before called */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.modal button{
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+.social-links {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    border: 4px solid green;
+}
+
+.social-links h3 {
+    color: #00ff00;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links ul li {
+    font-size: 1.2em;
+}
+
+.social-links ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 2px solid #00ff00;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links ul li a:hover {
+    background-color: #00ff00;
+    color: #1b1b1b;
+}
+
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* TO DO: */
+/* fix spacing */
+/* change colors on hover botton */
+/* Get this to popp on hover */
+/* responseness */
+/* favicon */
